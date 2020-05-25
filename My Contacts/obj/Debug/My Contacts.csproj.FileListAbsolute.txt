@@ -1,0 +1,10 @@
+C:\Users\vagrant\Desktop\Projects\MyContacts\My Contacts\My Contacts\bin\Debug\My Contacts.exe.config
+C:\Users\vagrant\Desktop\Projects\MyContacts\My Contacts\My Contacts\bin\Debug\My Contacts.exe
+C:\Users\vagrant\Desktop\Projects\MyContacts\My Contacts\My Contacts\bin\Debug\My Contacts.pdb
+C:\Users\vagrant\Desktop\Projects\MyContacts\My Contacts\My Contacts\obj\Debug\My Contacts.csprojAssemblyReference.cache
+C:\Users\vagrant\Desktop\Projects\MyContacts\My Contacts\My Contacts\obj\Debug\My_Contacts.MyContacts.resources
+C:\Users\vagrant\Desktop\Projects\MyContacts\My Contacts\My Contacts\obj\Debug\My_Contacts.Properties.Resources.resources
+C:\Users\vagrant\Desktop\Projects\MyContacts\My Contacts\My Contacts\obj\Debug\My Contacts.csproj.GenerateResource.cache
+C:\Users\vagrant\Desktop\Projects\MyContacts\My Contacts\My Contacts\obj\Debug\My Contacts.csproj.CoreCompileInputs.cache
+C:\Users\vagrant\Desktop\Projects\MyContacts\My Contacts\My Contacts\obj\Debug\My Contacts.exe
+C:\Users\vagrant\Desktop\Projects\MyContacts\My Contacts\My Contacts\obj\Debug\My Contacts.pdb
