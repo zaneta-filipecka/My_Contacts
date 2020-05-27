@@ -48,5 +48,6 @@ namespace My_Contacts
             this.contactsTableAdapter.Fill(this.myContactsDataSet.Contacts);
 
         }
+
     }
 }
