@@ -36,5 +36,17 @@ namespace My_Contacts
         {
 
         }
+
+        private void lblSearch_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MyContacts_Load(object sender, EventArgs e)
+        {
+            // TODO: Ten wiersz kodu wczytuje dane do tabeli 'myContactsDataSet.Contacts' . Możesz go przenieść lub usunąć.
+            this.contactsTableAdapter.Fill(this.myContactsDataSet.Contacts);
+
+        }
     }
 }
