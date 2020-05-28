@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -50,12 +49,12 @@ namespace My_Contacts.MyContactsClasses
             SqlConnection conn = new SqlConnection(myContactConnectionString);
             try
             {
-                string sql = "INSERT INTO Contacts (FirstName, LastName, Address, E-mail, Phone, Company) VALUES(@FirstName, @LastName, @Address, @E-mail, @Phone, @Company)";
+                string sql = @"INSERT INTO Contacts ([FirstName], [LastName], [Address], [E-mail], [Phone], [Company]) VALUES (@FirstName, @LastName, @Address, @Email, @Phone, @Company)";
                 SqlCommand cmd = new SqlCommand(sql, conn);
                 cmd.Parameters.AddWithValue("@FirstName", c.FirstName);
                 cmd.Parameters.AddWithValue("@LastName", c.LastName);
                 cmd.Parameters.AddWithValue("@Address", c.Address);
-                cmd.Parameters.AddWithValue("@E-mail", c.Email);
+                cmd.Parameters.AddWithValue("@Email", c.Email);
                 cmd.Parameters.AddWithValue("@Phone", c.Phone);
                 cmd.Parameters.AddWithValue("@Company", c.Company);
 
@@ -72,7 +71,7 @@ namespace My_Contacts.MyContactsClasses
             }
             catch(Exception ex)
             {
-
+                
             }
             finally
             {
@@ -88,13 +87,13 @@ namespace My_Contacts.MyContactsClasses
             SqlConnection conn = new SqlConnection(myContactConnectionString);
             try
             {
-                string sql = "UPDATE Contacts SET FirstName=@FirstName, LastName=@LastName, Address=@Address, E-mail=@E-mail, Phone=@Phone, Company=@Company WHERE ContactID=@ContactID";
+                string sql = @"UPDATE Contacts SET [FirstName]=@FirstName, [LastName]=@LastName, [Address]=@Address, [E-mail]=@Email, [Phone]=@Phone, [Company]=@Company WHERE [ContactID]=@ContactID";
 
                 SqlCommand cmd = new SqlCommand(sql, conn);
                 cmd.Parameters.AddWithValue("@FirstName", c.FirstName);
                 cmd.Parameters.AddWithValue("@LastName", c.LastName);
                 cmd.Parameters.AddWithValue("@Address", c.Address);
-                cmd.Parameters.AddWithValue("@E-mail", c.Email);
+                cmd.Parameters.AddWithValue("@Email", c.Email);
                 cmd.Parameters.AddWithValue("@Phone", c.Phone);
                 cmd.Parameters.AddWithValue("@Company", c.Company);
                 cmd.Parameters.AddWithValue("ContactID", c.ContactID);
